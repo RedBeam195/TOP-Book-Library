@@ -83,3 +83,26 @@ body{
     width: 20px;
     height: 20px;
 }
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap : 2rem;
+    margin: 0 2rem;
+}
+.card-grid >div{
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 16px #a7a7a7;
+}
+.card-grid > div > div{
+    background-color: red;
+    width: 4rem;
+    height: 1rem;
+}
+.card-grid > div > div.read{
+    background-color: #40d612;
+}
